@@ -87,11 +87,8 @@ public class LoginActivity extends Activity {
                             Intent myIntent = new Intent(LoginActivity.this, EventActivity.class);
                             Utils.username = username;
                             startActivity(myIntent);
-                            /*
-                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                            startActivity(intent);
                             finish();
-                            */
+
                         } else {
                             Toast.makeText(getBaseContext(),"Please login again", Toast.LENGTH_SHORT).show();
                         }
