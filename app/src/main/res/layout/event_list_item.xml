@@ -1,6 +1,3 @@
-
-<!--Item that will be inserted into recycler view, this view will be called N times
- since there might N events showing in list-->
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_marginTop="5dp"
