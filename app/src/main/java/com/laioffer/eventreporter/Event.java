@@ -13,6 +13,16 @@ public class Event {
     private String username;
     private String imgUri;
 
+    public int getCommentNumber() {
+        return CommentNumber;
+    }
+
+    public void setCommentNumber(int commentNumber) {
+        CommentNumber = commentNumber;
+    }
+
+    private int CommentNumber;
+
     public int getLike() {
         return like;
     }
