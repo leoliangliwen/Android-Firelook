@@ -83,6 +83,7 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.View
         holder.description.setText(event.getDescription());
         holder.time.setText(Utils.timeTransformer(event.getTime()));
         holder.good_number.setText(String.valueOf(event.getLike()));
+        holder.comment_number.setText(String.valueOf(event.getCommentNumber()));
 
         if (event.getImgUri() != null) {
             final String url = event.getImgUri();

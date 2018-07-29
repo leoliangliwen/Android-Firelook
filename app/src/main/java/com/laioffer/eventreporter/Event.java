@@ -12,16 +12,16 @@ public class Event {
     private long time;
     private String username;
     private String imgUri;
+    private int commentNumber;
 
     public int getCommentNumber() {
-        return CommentNumber;
+        return commentNumber;
     }
 
     public void setCommentNumber(int commentNumber) {
-        CommentNumber = commentNumber;
+        this.commentNumber = commentNumber;
     }
 
-    private int CommentNumber;
 
     public int getLike() {
         return like;
