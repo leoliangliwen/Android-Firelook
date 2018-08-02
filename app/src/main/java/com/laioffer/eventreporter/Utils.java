@@ -2,6 +2,7 @@ package com.laioffer.eventreporter;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.location.Location;
 import android.util.Log;
 
 import org.apache.commons.codec.binary.Hex;
@@ -80,4 +81,23 @@ public class Utils {
 
         return bitmap;
     }
+
+    public static int distanceBetweenTwoLocations(double currentLatitude,
+                                                  double currentLongitude,
+                                                  double destLatitude,
+                                                  double destLongitude) {
+
+        Location currentLocation = new Location("CurrentLocation");
+        currentLocation.setLatitude(currentLatitude);
+        currentLocation.setLongitude(currentLongitude);
+        Location destLocation = new Location("DestLocation");
+        destLocation.setLatitude(destLatitude);
+        destLocation.setLongitude(destLongitude);
+        double distance = currentLocation.distanceTo(destLocation);
+
+        double inches = (39.370078 * distance);
+        int miles = (int) (inches / 63360);
+        return miles;
+    }
+
 }

@@ -22,7 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EventActivity" />
+        <activity android:name=".EventActivity" >
+        </activity>activity>
         <activity
             android:name=".EventReportActivity"
             android:screenOrientation="portrait"
@@ -30,6 +31,10 @@
         <activity android:name=".CommentActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDI4E5agwVleMIBWJ89xm0GPGoXIjA-IJo" />
+
     </application>
 
 </manifest>
